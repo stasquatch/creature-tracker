@@ -2,11 +2,13 @@
 @import './_nav';
 @import './footer';
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap');
+
 body {
   background: rgb(245, 245, 228);
   font-size: $base-font-size;
   color: $primary-text;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 
@@ -22,10 +24,13 @@ body {
       border: 1pt solid rgb(219, 219, 204);
       margin: 0;
       padding: 0;
-      font-size: 1.8em;
 
       .content {
         padding: $layout-padding;
+      }
+
+      p {
+        font-size: $primary-font-size;
       }
     }
   }
