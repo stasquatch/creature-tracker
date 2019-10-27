@@ -1,0 +1,31 @@
+@import './variables';
+@import './_nav';
+@import './footer';
+
+body {
+  background: rgb(245, 245, 228);
+  font-size: 16px;
+  color: $primary-text;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  .outer-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    .inner-container {
+      width: 80%;
+      background: white;
+      border: 1pt solid rgb(219, 219, 204);
+      margin: 0;
+      padding: 0;
+
+      .content {
+        padding: $layout-padding;
+      }
+    }
+  }
+}

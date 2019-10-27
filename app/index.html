@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CreatureTracker</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{content-for "head"}}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CreatureTracker</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/creature-tracker.css">
+  {{content-for "head"}}
 
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/creature-tracker.css">
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/creature-tracker.js"></script>
+  {{content-for "head-footer"}}
+</head>
 
-    {{content-for "body-footer"}}
-  </body>
+<body>
+  <div class="outer-container">
+    <div class="inner-container">
+      <header>
+        <nav>
+          <ul>
+            <li id="NavHome"><h1>Creature Tracker</h1></li>
+            <li id="NavAbout">About</li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="content">
+        <p>test content goes here<bR><BR><BR><BR>
+        test content goes here<BR><BR>
+        test</p>
+        {{content-for "body"}}
+      </section>
+
+      <script src="{{rootURL}}assets/vendor.js"></script>
+      <script src="{{rootURL}}assets/creature-tracker.js"></script>
+      
+      <footer>
+        footer things go here
+        {{content-for "body-footer"}}
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>
