@@ -1,4 +1,8 @@
-$layout-padding: 20px;
+// layout
+$layout-spacing: 20px;
+$layout-padding: $layout-spacing;
+
+// colors
 $primary: rgb(46, 94, 46);
 $primary-text: rgb(44, 44, 44);
 $secondary-text: rgb(245, 245, 228);
