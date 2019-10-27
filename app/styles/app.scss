@@ -4,7 +4,7 @@
 
 body {
   background: rgb(245, 245, 228);
-  font-size: 16px;
+  font-size: $base-font-size;
   color: $primary-text;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -22,6 +22,7 @@ body {
       border: 1pt solid rgb(219, 219, 204);
       margin: 0;
       padding: 0;
+      font-size: 1.8em;
 
       .content {
         padding: $layout-padding;
