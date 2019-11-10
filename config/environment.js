@@ -24,14 +24,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.dataWorldApiKey = process.env.dataWorldApiKey
   }
-
+  
   if (environment === 'test') {
+    ENV.dataWorldApiKey = process.env.dataWorldApiKey;
     // Testem prefers this...
     ENV.locationType = 'none';
 
