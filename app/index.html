@@ -17,33 +17,12 @@
 </head>
 
 <body>
-  <div class="outer-container">
-    <div class="inner-container">
-      <header>
-        <nav>
-          <ul>
-            <li id="NavHome"><h1><a>Creature Tracker</a></h1></li>
-            <li id="NavAbout"><a>About</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="content">
-        <p>test content goes here<bR><BR><BR><BR>
-        test content goes here<BR><BR>
-        test</p>
-        {{content-for "body"}}
-      </section>
+    {{content-for "body"}}
 
       <script src="{{rootURL}}assets/vendor.js"></script>
       <script src="{{rootURL}}assets/creature-tracker.js"></script>
-      
-      <footer>
-        footer things go here
-        {{content-for "body-footer"}}
-      </footer>
-    </div>
-  </div>
+  
+    {{content-for "body-footer"}}
 </body>
 
 </html>

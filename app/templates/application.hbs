@@ -1,1 +1,22 @@
-{{outlet}}
+<div class="outer-container">
+  <div class="inner-container">
+    <header>
+      <nav>
+        <ul>
+          <li id="NavHome">
+            <h1><a>Creature Tracker</a></h1>
+          </li>
+          <li id="NavAbout"><a>About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="content">
+      {{outlet}}
+    </section>
+
+    <footer>
+      footer things go here
+    </footer>
+  </div>
+</div>
