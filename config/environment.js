@@ -20,15 +20,14 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    dataWorldApiKey: process.env.DATA_WORLD_API_KEY
   };
 
   if (environment === 'development') {
-    ENV.dataWorldApiKey = process.env.dataWorldApiKey
   }
   
   if (environment === 'test') {
-    ENV.dataWorldApiKey = process.env.dataWorldApiKey;
     // Testem prefers this...
     ENV.locationType = 'none';
 
